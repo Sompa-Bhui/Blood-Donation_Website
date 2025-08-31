@@ -1,0 +1,63 @@
+/* assets/css/style.css - simple responsive styles */
+
+:root{
+  --primary: #c62828;
+  --dark: #222;
+  --muted: #666;
+  --bg: #f6f6f6;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, Arial, sans-serif;
+  color:var(--dark);
+  background:var(--bg);
+  line-height:1.5;
+}
+
+.container{max-width:1000px;margin:0 auto;padding:0 16px}
+
+.site-header{
+  background: #fff;
+  border-bottom:1px solid #eee;
+  position:sticky;top:0;z-index:20;
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--dark)}
+.logo{width:42px;height:auto}
+.main-nav a{margin-left:14px;color:var(--dark);text-decoration:none;font-weight:600}
+.main-nav a:hover{color:var(--primary)}
+
+.hero{
+  background: linear-gradient(90deg, rgba(198,40,40,0.08), rgba(255,255,255,0));
+  padding:48px 0;
+  text-align:center;
+}
+.hero h1{margin:8px 0;font-size:2rem;color:var(--primary)}
+.hero p{margin:10px 0;color:var(--muted)}
+
+.btn{
+  display:inline-block;background:var(--primary);color:#fff;padding:10px 18px;border-radius:6px;text-decoration:none;border:none;cursor:pointer;font-weight:700
+}
+.btn:hover{opacity:0.95}
+
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;padding:24px 0}
+.card{background:#fff;padding:18px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+
+.content{padding:24px 0}
+.form-card{background:#fff;padding:18px;border-radius:8px;max-width:600px}
+.form-card label{display:block;margin-top:10px;font-weight:600}
+.form-card input,.form-card textarea,.form-card select{
+  width:100%;padding:10px;margin-top:6px;border-radius:6px;border:1px solid #ddd;
+}
+
+.site-footer{background:#fff;border-top:1px solid #eee;padding:16px 0;margin-top:32px;text-align:center;color:var(--muted)}
+
+.note{color:var(--muted);margin-top:12px;font-size:0.95rem}
+
+/* small screens */
+@media (max-width:600px){
+  .main-nav{display:none}
+  .hero h1{font-size:1.5rem}
+}
