@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pledge to Donate — Blood Donation</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/images/logo.svg" alt="logo" class="logo"><span>Blood Donation</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    <h1>Pledge to Donate</h1>
+
+    <form id="donationForm" class="form-card">
+      <label for="name">Full name</label>
+      <input id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required>
+
+      <label for="blood">Blood group</label>
+      <select id="blood" name="blood" required>
+        <option value="">Select</option>
+        <option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>O+</option><option>O-</option><option>AB+</option><option>AB-</option>
+      </select>
+
+      <label for="city">City</label>
+      <input id="city" name="city" required>
+
+      <button type="submit" class="btn">Submit Pledge</button>
+    </form>
+
+    <section id="pledges" class="card" style="margin-top:20px;">
+      <h3>Saved pledges (stored locally)</h3>
+      <ul id="pledgeList"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year-3"></span> Blood Donation</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
