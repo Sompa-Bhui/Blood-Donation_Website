@@ -1,1 +1,8 @@
-
+<!-- assets/images/logo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 64 64" role="img" aria-label="Blood donation logo">
+  <title>Blood Donation</title>
+  <rect width="64" height="64" rx="8" fill="#fff"></rect>
+  <path d="M32 50s-14-8.5-20-15c-5-5.9-1.6-14 5-14 4.5 0 6.7 3.7 7.9 5.7C26.4 25.7 28.7 22 33 22c6.6 0 10.4 8.1 5 14-6 6.7-20 14-20 14z" fill="#c62828"></path>
+  <rect x="28" y="22" width="8" height="16" rx="1" fill="#fff"></rect>
+  <rect x="24" y="26" width="16" height="8" rx="1" fill="#fff"></rect>
+</svg>
